@@ -38,6 +38,13 @@
       transition: transform 120ms ease, box-shadow 120ms ease;
     }
 
+    th {
+      padding: 0 0 2px;
+      font-size: clamp(0.9rem, 3vw, 1.2rem);
+      font-weight: 900;
+      line-height: 1;
+    }
+
     button:hover,
     button:focus-visible {
       transform: translateY(-2px);
@@ -49,12 +56,24 @@
       background: #ddf8ef;
     }
 
+    .easy-text {
+      color: #20b486;
+    }
+
     .norm {
       background: #e6efff;
     }
 
+    .norm-text {
+      color: #3478f6;
+    }
+
     .hell {
       background: #ffe4eb;
+    }
+
+    .hell-text {
+      color: #ef476f;
     }
 
     #puzzleImage {
@@ -67,6 +86,13 @@
 </head>
 <body>
   <table aria-label="問題選択">
+    <thead>
+      <tr>
+        <th class="easy-text">EASY</th>
+        <th class="norm-text">NORM</th>
+        <th class="hell-text">HELL</th>
+      </tr>
+    </thead>
     <tbody>
       <tr>
         <td><button class="easy" type="button" data-file="1.jpg">1</button></td>
